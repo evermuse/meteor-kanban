@@ -12,7 +12,7 @@ Router.route('/', function() {
 
 });
 
-Router.route('/sign_in', function() {
+Router.route('/signIn', function() {
   this.render('signIn');
 });
 
