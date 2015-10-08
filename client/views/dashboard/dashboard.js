@@ -1,5 +1,6 @@
 Template.dashboard.events({
   // eventname  selector
+  // add button
   'submit #addTaskForm': function(evt, template){ // template is blaze template instance.  blaze is the renedering engine
     evt.preventDefault(); // prevents page from reloading
     Tasks.insert({
@@ -12,11 +13,12 @@ Template.dashboard.events({
   },
 
   // delete button
-  '.delete #addTaskForm': function() {
-    Tasks.remove(this._id);
+  'click .deleteTask': function(evt, template){
+    evt.preventDefault();
+    Tasks.remove({
+      _id: this._id
+    });
   }
-
-
 });
 
 
@@ -26,3 +28,4 @@ Template.dashboard.helpers({
     return Tasks.find();
   }
 });
+
