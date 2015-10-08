@@ -1,5 +1,5 @@
 // create the tasks database
-Tasks = new Meteor.Collections('Tasks');
+Tasks = new Meteor.Collection('Tasks');
 
 // create the user databse
-Users = new Meteor.Collections('Users');
+Users = new Meteor.Collection('Users');
