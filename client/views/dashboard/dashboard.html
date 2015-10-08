@@ -5,8 +5,8 @@
       <input type="text" name="title">
       <textarea name="description" cols="30" rows="10"></textarea>
       <button type="submit">Add</button>
-      <button type="submit">Delete</button>
-      <button class="delete">Start</button>
+      <button type="delete">Delete</button>
+      <button type="start">Start</button>
       <!-- how do I set each of these buttons to do a different feature.  ex. Start = move to "inProgress" table.
       Delete = remove tasks and remove from database
       Add = add to the database -->
@@ -17,9 +17,10 @@
 
     <ul>
       {{#each tasks}}
-      <li>
-        {{title}}
-        {{description}}
+      <li class="deleteTask">
+      <!-- <input type='text' checked="{{checked}}" class="toggle-checked" /> -->
+          {{title}}
+          {{description}}
       </li>
       {{/each}}
     </ul>
