@@ -31,3 +31,4 @@ Template.dashboard.helpers({
     return Tasks.find();
   }
 });
+
