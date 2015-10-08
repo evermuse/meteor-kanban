@@ -1,12 +1,12 @@
 <template name="dashboard">
   <h3>Things to Do</h3>
+
+  <!-- the add task column -->
   <div>
     <form id="addTaskForm">
       <input type="text" name="title">
       <textarea name="description" cols="30" rows="10"></textarea>
       <button type="submit">Add</button>
-      <button type="submit">Delete</button>
-      <button class="delete">Start</button>
 
       <!-- how do I set each of these buttons to do a different feature.  ex. Start = move to "inProgress" table.
       Delete = remove tasks and remove from database
@@ -18,17 +18,26 @@
 
     <ul>
       {{#each tasks}}
-      <li>
-        {{title}}
-        {{description}}
+      <li >
+      <!-- <input type='text' checked="{{checked}}" class="toggle-checked" /> -->
+          {{title}}
+          {{description}}
+      <button class="deleteTask" type="delete">Delete</button>
+      <button type="start">Start</button>
       </li>
       {{/each}}
     </ul>
   </div>
 
-  <footer>
-    <h2>footer</h2>
-  </footer>
+
+  <!-- inProgress column -->
+  <div>
+
+
+
+
+  </div>
+
 
 </template>
 
