@@ -1,3 +1,27 @@
-<template name='signIn'>
-  {{> loginButtons}}
+<template name="signIn">
+
+  <section id="signInSection">
+
+    <form>
+        <input class='button' placeholder='username' type="email" name="registerEmail">
+        <input class='button' placeholder='password' type="password" name="registerPassword">
+        <input class='button' type="submit" value="Register">
+    </form>
+
+  </section>
+
+</template>
+
+<template name="login">
+
+  <section id="signInSection">
+
+    <form>
+        <input class='button' placeholder='username' type="email" name="loginEmail">
+        <input class='button' placeholder='password' type="password" name="loginPassword">
+        <input class='button' type="submit" value="Login">
+    </form>
+
+  </section>
+
 </template>
