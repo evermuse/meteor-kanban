@@ -8,7 +8,7 @@
 
         <div>
 
-          {{#each tasks}}
+          {{#each getToDoAllItems}}
             {{>taskItem}}
           {{/each}}
 
@@ -32,7 +32,13 @@
       <!-- inProgress column -->
       <section id="inProgress">
         <h3>in progress</h3>
+        <div>
 
+          {{#each getInProgressAllItems}}
+            {{>taskItem}}
+          {{/each}}
+
+        </div>
       </section>
 
     </div>
