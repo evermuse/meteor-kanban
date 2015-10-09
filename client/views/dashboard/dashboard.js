@@ -37,6 +37,13 @@ Template.dashboard.events({
     var newStatus = this.status;
     newStatus++;
     Tasks.update(this._id, {$set: {status: newStatus}});
+  },
+  'click .previous' : function(evt, template){
+    evt.preventDefault();
+    console.log(this);
+    var newStatus = this.status;
+    newStatus--;
+    Tasks.update(this._id, {$set: {status: newStatus}});
   }
 });
 
@@ -51,6 +58,12 @@ Template.dashboard.helpers({
 Template.dashboard.helpers({
   getInProgressAllItems: function(){
     return Tasks.find({status: 2});
+  }
+});
+
+Template.dashboard.helpers({
+  getCompletedAllItems: function(){
+    return Tasks.find({status: 3});
   }
 });
 
