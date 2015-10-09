@@ -1,43 +1,52 @@
 <template name="dashboard">
-  <h3>Things to Do</h3>
 
-  <!-- the add task column -->
-  <div>
-    <form id="addTaskForm">
-      <input type="text" name="title">
-      <textarea name="description" cols="30" rows="10"></textarea>
-      <button type="submit">Add</button>
+  <div class="row">
+    <div class="taskBoard large-4 columns">
+      <!-- the add task column -->
+      <section id="thingsToDo">
+        <h2>Things To Do</h2>
 
-      <!-- how do I set each of these buttons to do a different feature.  ex. Start = move to "inProgress" table.
-      Delete = remove tasks and remove from database
-      Add = add to the database -->
+        <div>
+          {{#each tasks}}
+            {{>taskItem}}
+          {{/each}}
+
+        </div>
 
 
 
-    </form>
+        <form id="addTaskForm">
+          <p>Title</p>
+          <input type="text" name="title">
+          <p>Description</p>
+          <textarea name="description" cols="30" rows="10"></textarea>
+          <button class='button' type="submit">Add</button>
 
-    <ul>
-      {{#each tasks}}
-      <li >
-      <!-- <input type='text' checked="{{checked}}" class="toggle-checked" /> -->
-          {{title}}
-          {{description}}
-      <button class="deleteTask" type="delete">Delete</button>
-      <button type="start">Start</button>
-      </li>
-      {{/each}}
-    </ul>
+        </form>
+
+
+      </section>
+    </div>
+
+    <div class="taskBoard large-4 columns">
+
+      <!-- inProgress column -->
+      <section id="inProgress">
+        <h3>in progress</h3>
+
+      </section>
+
+    </div>
+    <div class="taskBoard large-4 columns">
+      <!-- completed column -->
+      <section id="completed">
+        <h3>completed</h3>
+
+      </section>
+
+
+    </div>
   </div>
-
-
-  <!-- inProgress column -->
-  <div>
-
-
-
-
-  </div>
-
 
 </template>
 
