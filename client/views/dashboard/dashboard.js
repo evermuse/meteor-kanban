@@ -10,7 +10,8 @@ Template.dashboard.events({
 
       title : evt.target.title.value,
       description : evt.target.description.value,
-      createdAt : Date.now()
+      createdAt : Date.now(),
+      status : 1
 
     });
 
@@ -28,16 +29,28 @@ Template.dashboard.events({
 
   'click #taskItem' : function(evt, template){
     evt.preventDefault();
-    alert('what the heck');
+  },
 
+  'click .next' : function(evt, template){
+    evt.preventDefault();
+    console.log(this);
+    var newStatus = this.status;
+    newStatus++;
+    Tasks.update(this._id, {$set: {status: newStatus}});
   }
 });
 
 
 
 Template.dashboard.helpers({
-  tasks: function(){
-    return Tasks.find();
+  getToDoAllItems: function(){
+    return Tasks.find({status: 1});
+  }
+});
+
+Template.dashboard.helpers({
+  getInProgressAllItems: function(){
+    return Tasks.find({status: 2});
   }
 });
 
