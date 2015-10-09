@@ -1,0 +1,37 @@
+<template name="dashboard-icebox">
+
+  <div id="toggleIcebox">
+
+    <a href="/"><p class='verticalText'>Icebox</p></a>
+
+  </div>
+
+  <div class="row">
+
+    <div class="taskBoard small-12 medium-3 large-3 columns">
+
+        {{>icebox}}
+
+    </div>
+
+    <div class="taskBoard small-12 medium-3 large-3 columns">
+
+        {{>todo}}
+
+    </div>
+
+    <div class="taskBoard small-12 medium-3 large-3 columns">
+
+        {{>inProgress}}
+
+    </div>
+
+    <div class="taskBoard small-12 medium-3 large-3 columns">
+
+        {{>completed}}
+
+    </div>
+
+  </div>
+
+</template>
