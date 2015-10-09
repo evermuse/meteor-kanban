@@ -7,11 +7,21 @@ Router.configure({
 });
 
 
+// Router.route('/signup', function() {
+//   //this is the section where we want stuff to go into yield
+//   //first initial page
+
+//   this.render('signup');
+
+// });
+
 Router.route('/', function() {
   //this is the section where we want stuff to go into yield
   //first initial page
 
-  this.render('signIn');
+  // this.render('login');
+  this.render('dashboard');
+
 
 });
 
@@ -19,8 +29,8 @@ Router.route('/', function() {
 
 // });
 
-Router.route('/dashboard', function() {
+// Router.route('/dashboard', function() {
 
-  this.render('dashboard');
+//   this.render('dashboard');
 
-});
+// });

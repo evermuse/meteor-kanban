@@ -18,21 +18,56 @@ header {
     padding: 0px;
     text-align: center;
     line-height: 50px;
+
+  }
+
+  a {
+
+    color: white;
+    float: right;
   }
 
 }
 
-#signInSection {
+#loginSection {
 
   width: 150px;
   margin: 0 auto;
   margin-top: 25px;
 
-  .button {
+  .input {
 
+    text-align: center;
+    width: 125px;
     padding: 5px;
     margin: 5px;
 
   }
+
+  .button {
+
+    width: 139px;
+    border: 1px solid gray;
+    margin: 5px;
+    background-color: white;
+    cursor: pointer;
+
+
+  }
+
+  #getAccount {
+
+    height: 10px;
+    padding: 10px 0 0 5px;
+    text-decoration: none;
+
+  }
+
+
+}
+
+.login-link-text {
+
+  color: white;
 
 }
