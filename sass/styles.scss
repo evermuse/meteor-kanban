@@ -1,3 +1,4 @@
+
 body {
 
   background-color: #fff;
@@ -44,6 +45,73 @@ header {
 
   }
 
+}
+
+
+// ======= dashboard ========
+.row{
+  background:yellow;
+}
+
+
+.taskBoard{
+  display: inline;
+  height: 100%;
+
+  #thingsToDo {
+    background: red;
+    padding:10px;
+  }
+
+  #inProgress{
+    background: blue;
+  }
+
+  #completed{
+    background: green;
+  }
+
+  h2 {
+    text-align: center;
+
+  }
+  p{
+
+  }
+
+  #addTaskForm {
+
+    & > input {
+    }
+
+    textarea {
+    }
+  }
+
+  ul{
+    background: gray;
+    list-style-type:none;
+
+  }
+  li{
+    padding:5px;
+
+  }
+
+}
+
+#taskItem{
+  background: gray;
+  padding:5px;
+  margin-bottom: 10px;
+
+  & > button{
+    display: none;
+  }
+
+  hover{
+    background:white;
+  }
   .button {
 
     width: 139px;

@@ -24,6 +24,12 @@ Template.dashboard.events({
     Tasks.remove({
       _id: this._id
     });
+  },
+
+  'click #taskItem' : function(evt, template){
+    evt.preventDefault();
+    alert('what the heck');
+
   }
 });
 
