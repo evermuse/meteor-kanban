@@ -1,3 +1,5 @@
+@import "./partials/settings";
+@import ".meteor/local/build/programs/server/assets/packages/matthew_foundation5-sass/foundation";
 
 body {
 
@@ -5,48 +7,14 @@ body {
 
 }
 
-header {
+h1 {
 
-  height: 50px;
-  background-color: #000;
-  color: #fff;
+  margin: 0px;
   padding: 0px;
-  margin-top: 0px;
-
-  h1 {
-
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    line-height: 50px;
-
-  }
-
-  a {
-
-    color: white;
-    float: right;
-  }
+  line-height: 50px;
+  display: inline-block;
 
 }
-
-#loginSection {
-
-  width: 150px;
-  margin: 0 auto;
-  margin-top: 25px;
-
-  .input {
-
-    text-align: center;
-    width: 125px;
-    padding: 5px;
-    margin: 5px;
-
-  }
-
-}
-
 
 // ======= dashboard ========
 .row{
@@ -55,7 +23,7 @@ header {
 
 
 .taskBoard{
-  display: inline;
+
   height: 100%;
 
   #thingsToDo {
