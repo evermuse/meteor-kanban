@@ -29,24 +29,29 @@ section{
 }
 
 .taskBoard{
-  // display: inline-block;
-  // position: absolute;
+
+
+  #icebox {
+
+    background-color: lightblue;
+
+  }
 
   #thingsToDo {
-    background: red;
-  // display: inline-block;
+
+    background: #FA2C7D;
 
   }
 
   #inProgress{
-    background: blue;
-  // display: inline-block;
+
+    background: lightgreen;
 
   }
 
   #completed{
-    background: green;
-  // display: inline-block;
+
+    background: gold;
 
   }
 
@@ -112,5 +117,23 @@ section{
 .login-link-text {
 
   color: white;
+
+}
+
+#toggleIcebox {
+
+  width: 30px;
+  height: 100px;
+  top: 50%;
+  background-color: lightblue;
+  position: fixed;
+  border: 1px solid gray;
+
+}
+
+.verticalText {
+
+  transform: rotate(270deg);
+  margin-top: 50px;
 
 }

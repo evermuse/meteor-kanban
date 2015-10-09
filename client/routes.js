@@ -6,14 +6,15 @@ Router.configure({
 
 });
 
-
 Router.route('/', function() {
-  //this is the section where we want stuff to go into yield
-  //first initial page
 
-  // this.render('login');
   this.render('dashboard');
 
+});
+
+Router.route('/icebox', function() {
+
+  this.render('dashboard-icebox');
 
 });
 

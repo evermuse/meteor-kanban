@@ -1,0 +1,19 @@
+<template name="icebox">
+
+    <!-- the add task column -->
+
+    <section id="icebox">
+
+      <h3>Icebox</h3>
+
+      <div>
+
+        {{#each getIceBoxItems}}
+          {{>taskItem}}
+        {{/each}}
+
+      </div>
+
+    </section>
+
+</template>

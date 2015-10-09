@@ -1,0 +1,17 @@
+<template name="completed">
+
+      <!-- completed column -->
+  <section id="completed">
+
+    <h3>Completed</h3>
+    <div>
+
+      {{#each getCompletedAllItems}}
+        {{>taskItem}}
+      {{/each}}
+
+    </div>
+
+  </section>
+
+</template>

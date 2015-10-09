@@ -1,0 +1,18 @@
+<template name="inProgress">
+
+  <section id="inProgress">
+
+  <!-- completed column -->
+
+    <h3>In Progress</h3>
+    <div>
+
+      {{#each getInProgressAllItems}}
+        {{>taskItem}}
+      {{/each}}
+
+    </div>
+
+  </section>
+
+</template>
