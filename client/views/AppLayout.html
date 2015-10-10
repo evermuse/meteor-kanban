@@ -2,23 +2,28 @@
 
   <nav class="top-bar">
 
-      <ul class="title-area">
+    <div class="title-area">
+      <h2>Meteor Kanban</h2>
+    </div>
 
-        <li><h1><a href="#">Meteor Kanban</a></h1></li>
-
-        <li class='toggle-topbar menu-icon'></li>
-
-      </ul>
 
       <section class="top-bar-section">
 
       <ul class="right">
         <li>
-          <a href="#">{{>loginButtons}}</a>
+          {{>loginButtons}}
         </li>
       </ul>
 
       </section>
+
+
+      <!-- <ul class="title-area">
+
+        <li><h1>Meteor Kanban</h1></li>
+
+      </ul> -->
+
 
   </nav>
 
@@ -27,6 +32,8 @@
     {{> yield}}
 
   </div>
+
+  <div class='footer'></div>
 
 </template>
 
