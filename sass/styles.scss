@@ -24,8 +24,10 @@ section{
 }
 
 .row {
-  position: absolute;
-  margin: 15px;
+
+  margin: auto;
+
+
 }
 
 .taskBoard{
@@ -128,6 +130,7 @@ section{
   background-color: lightblue;
   position: fixed;
   border: 1px solid gray;
+  margin-right: 10px;
 
 }
 
@@ -137,3 +140,30 @@ section{
   margin-top: 50px;
 
 }
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.main-content {
+
+  height: 100%;
+
+
+}
+
+// .columnBox {
+
+//   padding: 0px 40px 0px 10px;
+
+// }

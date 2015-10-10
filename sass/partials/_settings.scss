@@ -280,7 +280,7 @@ $modules: () !default;
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
 // $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+//$anchor-font-color-hover: scale-color($primary-color, $lightness: 0);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -342,7 +342,7 @@ $modules: () !default;
 
 // $accordion-navigation-padding: rem-calc(16);
 // $accordion-navigation-bg-color: #efefef  ;
-// $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
+//$accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
 // $accordion-navigation-font-color: #222;
 // $accordion-navigation-font-size: rem-calc(16);
@@ -676,7 +676,7 @@ $modules: () !default;
 
 // Select variables
 // $select-bg-color: #fafafa;
-// $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%);
+//$select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%);
 
 // Inline Lists
 
