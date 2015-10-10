@@ -47,6 +47,10 @@ section{
 
     background-color: lightblue;
 
+    .previous {
+      display: none;
+    }
+
   }
 
   #thingsToDo {
@@ -64,6 +68,10 @@ section{
   #completed{
 
     background: gold;
+
+    .next{
+      display: none;
+    }
 
   }
 
@@ -172,8 +180,23 @@ section{
 
 }
 
-// .columnBox {
+.taskTitle {
+  background: white;
+  padding: 3px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
 
-//   padding: 0px 40px 0px 10px;
+.taskDescription {
+  background: lightgray;
+  padding: 3px;
+}
 
-// }
+.taskFooter {
+  display: none;
+
+}
+
+.showTaskFooter {
+  display: block;
+}

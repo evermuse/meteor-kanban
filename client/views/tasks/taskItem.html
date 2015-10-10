@@ -1,13 +1,21 @@
 <template name="taskItem">
 
   <div id="taskItem">
-    {{title}}
-    {{description}}
-    <div id='buttonFooter'>
-      <button class="previous tiny" type="start">Prev</button>
-      <button class="deleteTask tiny" type="delete">Delete</button>
-      <button class="next tiny" type="start">Next</button>
+
+    <div class="taskTitle">{{title}}
+
+      <div class="taskFooter">
+        <div class="taskDescription">{{description}}</div>
+
+        <div id='buttonFooter'>
+          <button class="previous tiny" type="start">Prev</button>
+          <button class="deleteTask tiny" type="delete">Delete</button>
+          <button class="next tiny" type="start">Next</button>
+        </div>
+      </div>
+
     </div>
+
   </div>
 
 </template>
