@@ -4,8 +4,11 @@
 
     <div class="taskTitle">{{title}}
 
-      <div class="taskFooter">
+      <div class="taskBody">
         <div class="taskDescription">{{description}}</div>
+
+        <div class='metadata'>created by: {{email}}</div>
+        <div class='metadata'>created at: {{getTimeFromCreation}}</div>
 
         <div id='buttonFooter'>
           <button class="previous tiny" type="start">Prev</button>

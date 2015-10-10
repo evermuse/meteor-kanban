@@ -33,43 +33,54 @@ section{
 }
 .row {
 
-  // position: absolute;
   margin: auto;
   margin-top: 15px;
-  // text-align: center;
-
+  height: 80%;
 
 }
 
 .taskBoard{
-  // text-align: center;
+
+  height: 100%;
+
   #icebox {
 
-    background-color: lightblue;
+    background: white;
+    height: 100%;
+    border: 2px solid lightblue;
 
     .previous {
+
       display: none;
+
     }
 
   }
 
   #thingsToDo {
 
-    background: #FA2C7D;
+    background: white;
+    height: 100%;
+    border: 2px solid red;
 
   }
 
   #inProgress{
 
-    background: lightgreen;
+    background: white;
+    height: 100%;
+    border: 2px solid lightgreen;
 
   }
 
   #completed{
 
-    background: gold;
+    background: white;
+    height: 100%;
+    border: 2px solid gold;
 
     .next{
+
       display: none;
     }
 
@@ -101,9 +112,10 @@ section{
 }
 
 #taskItem{
-  background: gray;
+  background: white;
   padding:5px;
   margin-bottom: 10px;
+  border: 2px solid gray;
 
   & > button{
     // display: none;
@@ -145,9 +157,9 @@ section{
   width: 30px;
   height: 100px;
   top: 50%;
-  background-color: lightblue;
+  background-color: white;
   position: fixed;
-  border: 1px solid gray;
+  border: 2px solid lightblue;
   margin-right: 10px;
 
 }
@@ -183,20 +195,48 @@ section{
 .taskTitle {
   background: white;
   padding: 3px;
-  margin-bottom: 5px;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  line-height: 100%;
+  cursor: pointer;
 }
 
 .taskDescription {
-  background: lightgray;
+  padding-top: 5px;
+  background: white;
   padding: 3px;
+  font-size: 12px;
 }
 
-.taskFooter {
+.taskBody {
+
   display: none;
 
 }
 
-.showTaskFooter {
+.showTaskBody {
+
   display: block;
+
+}
+
+.metadata {
+
+  font-size: 12px;
+  padding: 3px;
+
+}
+
+.footer {
+
+  position: absolute;
+  bottom: 0;
+  border: 2px solid black;
+  height: 35px;
+  width: 100%;
+}
+
+#addTaskForm {
+
+  display: none;
+
 }

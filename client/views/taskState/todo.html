@@ -2,7 +2,7 @@
 
   <section id="thingsToDo">
 
-    <h3>Things To Do</h3>
+    <h3>To Do</h3>
 
     <div>
 
@@ -12,14 +12,9 @@
 
     </div>
 
-    <form id="addTaskForm">
-      <p>Title</p>
-      <input type="text" name="title">
-      <p>Description</p>
-      <textarea name="description" cols="20" rows="5"></textarea>
-      <button class='button tiny' type="submit">Add</button>
+    {{>addItem}}
 
-    </form>
+    <button class='addTask tiny'>New</button>
 
   </section>
 

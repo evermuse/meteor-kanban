@@ -5,12 +5,12 @@ Template.dashboard.events({
   'submit #addTaskForm' : function(evt, template) { // template is blaze template instance.  blaze is the renedering engine
     evt.preventDefault(); // prevents page from reloading
 
-      console.log();
-
+    console.log(Meteor.user().emails[0].address);
     //inserts the tasks into the db
     Tasks.insert({
 
       author : Meteor.user()._id,
+      email : Meteor.user().emails[0].address,
       title : evt.target.title.value,
       description : evt.target.description.value,
       createdAt : Date.now(),
@@ -21,6 +21,10 @@ Template.dashboard.events({
     //clears the input boxes
     title: evt.target.title.value = '';
     description: evt.target.description.value = '';
+
+    $('#addTaskForm').hide();
+    $('.addTask').show();
+
   },
 
   // delete button
@@ -82,6 +86,29 @@ Template.dashboard.events({
       alert('it appears you\'re not currently logged in');
 
     }
+
+  },
+
+  'click .taskTitle' : function(evt) {
+    evt.preventDefault();
+
+    $(evt.target).children(".taskBody").toggleClass("showTaskBody");
+
+  },
+
+  'click .addTask' : function(evt) {
+    evt.preventDefault();
+
+    $('#addTaskForm').show();
+    $('.addTask').hide();
+
+  },
+
+  'click #clear' : function(evt) {
+    evt.preventDefault();
+
+    $('#addTaskForm').hide();
+    $('.addTask').show();
 
   }
 

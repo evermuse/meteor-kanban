@@ -5,10 +5,12 @@ Template.dashboardIcebox.events({
   'submit #addTaskForm' : function(evt, template) { // template is blaze template instance.  blaze is the renedering engine
     evt.preventDefault(); // prevents page from reloading
 
+    console.log(Meteor.user().emails[0].address);
     //inserts the tasks into the db
     Tasks.insert({
 
       author : Meteor.user()._id,
+      email : Meteor.user().emails[0].address,
       title : evt.target.title.value,
       description : evt.target.description.value,
       createdAt : Date.now(),
@@ -19,6 +21,10 @@ Template.dashboardIcebox.events({
     //clears the input boxes
     title: evt.target.title.value = '';
     description: evt.target.description.value = '';
+
+    $('#addTaskForm').hide();
+    $('.addTask').show();
+
   },
 
   // delete button
@@ -87,9 +93,23 @@ Template.dashboardIcebox.events({
     evt.preventDefault();
     console.log('yo');
 
+    $(evt.target).children(".taskBody").toggleClass("showTaskBody");
 
-    $(evt.target).children(".taskFooter").toggleClass("showTaskFooter");
+  },
 
+  'click .addTask' : function(evt) {
+    evt.preventDefault();
+
+    $('#addTaskForm').show();
+    $('.addTask').hide();
+
+  },
+
+  'click #clear' : function(evt) {
+    evt.preventDefault();
+
+    $('#addTaskForm').hide();
+    $('.addTask').show();
 
   }
 
