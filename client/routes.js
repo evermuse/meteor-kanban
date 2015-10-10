@@ -14,7 +14,7 @@ Router.route('/', function() {
 
 Router.route('/icebox', function() {
 
-  this.render('dashboard-icebox');
+  this.render('dashboardIcebox');
 
 });
 
