@@ -83,6 +83,16 @@ Template.dashboard.events({
 
     }
 
+  },
+
+   'click .taskTitle' : function(evt) {
+    evt.preventDefault();
+    console.log('yo');
+
+
+    $(evt.target).children(".taskFooter").toggleClass("showTaskFooter");
+
+
   }
 
 });
