@@ -4,7 +4,11 @@ Template.icebox.helpers({
 
   getIceBoxItems : function() {
 
-    return Tasks.find({ status : 0 });
+    if (Meteor.user()._id === this.author) {
+
+      return Tasks.find({ status : 0 });
+
+    }
 
   }
 
