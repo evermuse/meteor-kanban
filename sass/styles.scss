@@ -18,21 +18,31 @@ h2, h3{
   text-align: center;
 }
 
+a{
+  text-decoration: none;
+
+
+}
 // ======= dashboard ========
 section{
   padding: 10px;
 }
-
+.top-bar{
+  height: 70px;
+  padding:10px;
+}
 .row {
 
+  // position: absolute;
   margin: auto;
+  margin-top: 15px;
+  // text-align: center;
 
 
 }
 
 .taskBoard{
-
-
+  // text-align: center;
   #icebox {
 
     background-color: lightblue;

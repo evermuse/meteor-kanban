@@ -22,6 +22,8 @@ Template.dashboardIcebox.events({
   },
 
   // delete button
+
+
   'click .deleteTask' : function(evt, template){
 
     if (Meteor.user()._id === this.author) {
@@ -45,6 +47,7 @@ Template.dashboardIcebox.events({
   },
 
   //move taskItem to next column
+
   'click .next' : function(evt, template) {
 
     if (Meteor.user()._id === this.author) {

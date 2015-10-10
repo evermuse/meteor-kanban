@@ -280,7 +280,11 @@ $modules: () !default;
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
 // $anchor-font-color: $primary-color;
+
+// $anchor-font-color-hover: scale-color($primary-color, $lightness: 0%);
+
 //$anchor-font-color-hover: scale-color($primary-color, $lightness: 0);
+
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
