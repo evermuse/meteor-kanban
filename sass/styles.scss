@@ -222,22 +222,23 @@ section{
   padding: 0 5px;
 }
 
-// // label "Email"
+// label "Email"
 #login-email-label{
   color:blue;
 }
 
-// // label "Password"
+// label "Password"
 #login-password-label{
   color:blue;
 }
 
-// // sign in Button
+// sign in Button
 #login-buttons-password.login-button.login-button-form-submit{
   background-color:orange;
+  margin-top: 5px;
 }
 
-// // "Create account" button
+// "Create account" button
 #signup-link{
   color:white;
   background:lightblue;
